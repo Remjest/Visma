@@ -1,0 +1,15 @@
+<svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_45">
+			<rect id="mdi:arrow-right-thin" rx="-0.500000" width="17.000000" height="17.000000" transform="translate(4.500000 6.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 1" cx="15.000000" cy="15.000000" r="14.000000" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<rect id="mdi:arrow-right-thin" rx="-0.500000" width="17.000000" height="17.000000" transform="translate(4.500000 6.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_45)">
+		<path id="Vector" d="M14.5 18.7L14.5 15.7L7.81 15.7L7.78 14.19L14.5 14.19L14.5 11.2L18.25 14.95L14.5 18.7Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
