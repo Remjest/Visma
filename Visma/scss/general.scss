@@ -1,0 +1,182 @@
+
+//----------Обнуление----------//
+*{
+    padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+//---------Стили general----------//
+
+.section {
+}
+
+.wrapper {
+}
+
+.logo {
+}
+
+.title {
+}
+
+.text {
+}
+
+//---------Стили header----------//
+
+.header {
+
+		// .header_tools
+
+		&_tools {
+		}
+
+		// .header_lang
+
+		&_lang {
+		}
+
+		// .header__wrapper
+
+		&__wrapper {
+		}
+
+		// .header__logo
+
+		&__logo {
+		}
+
+		// .header__nav
+
+		&__nav {
+		}
+
+		// .header__point
+
+		&__point {
+		}
+
+		// .header__search
+
+		&__search {
+		}
+
+		// .header__line
+
+		&__line {
+		}
+}
+
+//---------Стили footer----------//
+
+.footer {
+
+		// .footer_contacts
+
+		&_contacts {
+		}
+
+		// .footer__footer-top
+
+		&__footer-top {
+		}
+
+		// .footer__wrapper-top
+
+		&__wrapper-top {
+		}
+
+		// .footer__adress
+
+		&__adress {
+		}
+
+		// .footer__logo
+
+		&__logo {
+		}
+
+		// .footer__contact-num
+
+		&__contact-num {
+		}
+
+		// .footer__contact-mail
+
+		&__contact-mail {
+		}
+
+		// .footer__wrapper-bottom
+
+		&__wrapper-bottom {
+		}
+
+		// .footer__legal-nav
+
+		&__legal-nav {
+		}
+
+		// .footer__purchase-nav
+
+		&__purchase-nav {
+		}
+
+		// .footer__shareholder-nav
+
+		&__shareholder-nav {
+		}
+
+		// .footer__company-nav
+
+		&__company-nav {
+		}
+}
+
+.nav {
+
+		// .nav__title
+
+		&__title {
+		}
+
+		// .nav__point
+
+		&__point {
+		}
+}
+
