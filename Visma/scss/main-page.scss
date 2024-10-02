@@ -1,58 +1,122 @@
 //---------Стили section1----------//
 
 .section1 {
+    margin-top: 110px;
 
+    background: url(../img/sec1/Rectangle\ 23.png) center 110px no-repeat fixed;
 		// .section1__wrapper
 
 		&__wrapper {
+            padding-top: 113px;
+            padding-bottom: 113px;
+            display: flex;
+            justify-content: space-between;
 		}
 
 		// .section1__info
 
 		&__info {
+            width: 526px / 1296px * 100%;
+            height: 336px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 		}
 
 		// .section1__big-title
 
 		&__big-title {
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
 		}
 
 		// .section1__subtitle
 
 		&__subtitle {
+            padding: 40px 0 64px 0;
+            width: 322px / 526px * 100%;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
 		}
 
 		// .section1__about
 
 		&__about {
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 10%;
+            text-align: left;
+            text-transform: uppercase;
+            img{
+                height: 30px;
+                margin-left: 22.79px;
+            }
 		}
 
 		// .section1__services
 
 		&__services {
+            display: grid;
+            grid-template-columns: repeat(2, 306px);
+            grid-auto-rows: 250px;
 		}
 
 		// .section1__servise
 
 		&__servise {
+            background: rgb(93, 183, 222);
+            // width: 306px;
+            // height: 250px;
 		}
 }
 
 .servises {
+        gap: 24px;
 
 		// .servises_title
 
 		&_title {
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 10%;
+            text-align: left;
+            text-transform: uppercase;
 		}
 
 		// .servises_description
 
 		&_description {
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
 		}
 
 		// .servises__servise
 
 		&__servise {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 118;
+            padding: 30px 35px 30px 35px;
+            border-radius: 20px;
 		}
 }
 
