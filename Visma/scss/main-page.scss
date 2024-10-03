@@ -103,7 +103,6 @@
 
 		&__info {
 			width: 306px / 1296px * 100%;
-			// background-color: red;
 		}
 
 		// .section2__docs
@@ -154,49 +153,106 @@
 //---------Стили section3----------//
 
 .section3 {
-
+		background: rgba(61, 52, 139, 0.05);
 		// .section3__wrapper
 
 		&__wrapper {
+			padding-top: 100px;
+			padding-bottom: 110px;
 		}
 
 		// .section3__title
 
 		&__title {
+			padding-bottom: 60px;
 		}
 
 		// .section3__content
 
 		&__content {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
 		}
 
 		// .section3__text
 
 		&__text {
+			width: 636px / 1296px *100%;
+			*{
+				margin-bottom: 16px;
+			}
+			ul > li{
+				padding-left: 35px;
+				position: relative;
+			}
+
+			ul > li::before{
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: rgb(51, 51, 51);
+			}
+		}
+
+		&__text:last-child{
+			margin-bottom: 0;
 		}
 
 		// .section3__preview
 
 		&__preview {
+			max-width: 526px / 1296px * 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 
 		// .section3__video
 
 		&__video {
-            display: none;
+			max-width: 100%;
+			margin-bottom: 30px;
+			video{
+				width: 100%;
+				
+			}
 		}
 
 		// .section3__servise
 
 		&__servise {
+			background-color: rgb(93, 183, 222);
+			max-width: 526px;
+			.servises__title{
+				margin-bottom: 38px;
+			}
 		}
 }
 
 .video {
+		overflow: hidden;
+		border-radius: 20px;
+		position: relative;
 
 		// .video__btn
 
 		&__btn {
+			position: absolute;
+			width: 67px / 526px * 100%;
+			background-color: rgba(255, 255, 255, 0);
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			img{
+				width: 100%;
+			}
 		}
 }
 
