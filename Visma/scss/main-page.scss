@@ -77,46 +77,6 @@
 
 		&__servise {
             background: rgb(93, 183, 222);
-            // width: 306px;
-            // height: 250px;
-		}
-}
-
-.servises {
-        gap: 24px;
-
-		// .servises_title
-
-		&_title {
-            color: rgb(255, 255, 255);
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 140%;
-            letter-spacing: 10%;
-            text-align: left;
-            text-transform: uppercase;
-		}
-
-		// .servises_description
-
-		&_description {
-            color: rgb(255, 255, 255);
-            font-size: 19px;
-            font-weight: 700;
-            line-height: 140%;
-            letter-spacing: 0%;
-            text-align: left;
-		}
-
-		// .servises__servise
-
-		&__servise {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 118;
-            padding: 30px 35px 30px 35px;
-            border-radius: 20px;
 		}
 }
 
@@ -127,41 +87,66 @@
 		// .section2_title
 
 		&_title {
+			margin-bottom: 60px;
 		}
 
 		// .section2__wrapper
 
 		&__wrapper {
+			padding-top: 150px;
+			padding-bottom: 150px;
+			display: flex;
+            justify-content: space-between;
 		}
 
 		// .section2__info
 
 		&__info {
+			width: 306px / 1296px * 100%;
+			// background-color: red;
 		}
 
 		// .section2__docs
 
 		&__docs {
+			display: grid;
+			grid-template-rows: repeat(3, auto);
+			row-gap: 31px;
 		}
 
 		// .section2__doc
 
 		&__doc {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			span{
+				color: rgb(61, 52, 139);
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 140%;
+				letter-spacing: 0%;
+			}
 		}
 
 		// .section2__pdf
 
 		&__pdf {
+			width: 46px;
 		}
 
 		// .section2__servises
 
 		&__servises {
+			display: grid;
+            grid-template-columns: repeat(2, 416px);
+            grid-auto-rows: 223px;
 		}
 
 		// .section2__servise
 
 		&__servise {
+			background: rgb(61, 52, 139);
 		}
 }
 
