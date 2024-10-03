@@ -103,6 +103,42 @@ body {
   text-align: left;
 }
 
+.servises {
+  gap: 24px;
+}
+.servises__title {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 10%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.servises__description {
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.servises__servise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 118;
+  padding: 30px 35px 30px 35px;
+  border-radius: 20px;
+}
+
 .header {
   position: fixed;
   left: 0;

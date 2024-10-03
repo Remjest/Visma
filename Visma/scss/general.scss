@@ -78,6 +78,44 @@ body{
     text-align: left;
 }
 
+.servises {
+        gap: 24px;
+
+		// .servises_title
+
+		&__title {
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 10%;
+            text-align: left;
+            text-transform: uppercase;
+		}
+
+		// .servises_description
+
+		&__description {
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
+		}
+
+		// .servises__servise
+
+		&__servise {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 118;
+            padding: 30px 35px 30px 35px;
+            border-radius: 20px;
+		}
+}
+
 //---------Стили header----------//
 
 .header {
