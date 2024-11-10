@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="section header">
@@ -13,18 +13,30 @@
           <img src="img/header/Vector.svg" alt="" />
         </div>
         <nav class="header__nav">
-          <div class="header__point"><a href="">О компании</a></div>
+          <div class="header__point"><span>Навигация</span></div>
+          <div class="header__point header__point_active">
+            <a href="">О компании</a>
+          </div>
           <div class="header__point"><a href="">Новости</a></div>
           <div class="header__point"><a href="">Услуги</a></div>
           <div class="header__point"><a href="">Устав</a></div>
           <div class="header__point"><a href="">Закупки</a></div>
           <div class="header__point"><a href="">Партнеры</a></div>
           <div class="header__point"><a href="">Контакты</a></div>
+          <img src="/img/header/forward.png" alt="" />
         </nav>
         <div class="header_tools">
           <div class="header__search">
             <img src="img/header/ic_round-search.svg" alt="" />
-            <div class="header__line"></div>
+            <div class="header__line-wrapper">
+              <input
+                type="text"
+                name="Search"
+                id=""
+                placeholder="Поиск"
+                class="header__line"
+              />
+            </div>
           </div>
           <div class="header_lang">
             <span>RU</span>
@@ -52,7 +64,7 @@
             <img src="img/sec1/Group 7.svg" alt="" />
           </div>
         </div>
-        <div class="section1__services servises">
+        <div class="section1__servises servises">
           <a href="" class="section1__servise servises__servise">
             <div class="servises__title">услуги</div>
             <div class="servises__description">
@@ -120,7 +132,9 @@
           </a>
           <a href="" class="section2__servise servises__servise">
             <div class="servises__title">услуги</div>
-            <div class="servises__description">Агентское обслуживание судов</div>
+            <div class="servises__description">
+              Агентское обслуживание судов
+            </div>
           </a>
           <a href="" class="section2__servise servises__servise">
             <div class="servises__title">услуги</div>
@@ -135,12 +149,50 @@
             </div>
           </a>
         </div>
+        <div class="section2__more">
+          <img src="img/sec2/icons8.png" alt="" />
+        </div>
       </div>
     </section>
     <section class="section section3">
       <div class="section3__wrapper wrapper">
         <h2 class="section3__title title">О компании</h2>
         <div class="section3__content">
+          <div class="section3__preview">
+            <div class="section3__video video">
+              <button class="video__btn">
+                <img
+                  src="img/sec3/material-symbols_play-circle-rounded.png"
+                  alt=""
+                />
+              </button>
+              <video
+                muted
+                loop
+                preload="metadata"
+                controls
+                poster="img/sec3/preview.png"
+              >
+                <source
+                  src="img/sec3/visma-video (video-converter.com).webm"
+                  type="video/webm"
+                />
+                <source
+                  src="img/sec3/visma-video (video-converter.com).mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <a href="" class="section3__servise servises__servise">
+              <div class="servises__title">
+                Запрос ставки и условий погрузочно-разгрузочных работ
+              </div>
+              <div class="servises__description">
+                Рассчитайте моментально стоимость полных <br />портовых услуг в
+                порту VISMA
+              </div>
+            </a>
+          </div>
           <div class="section3__text text">
             <p>
               Tristique orci consectetur sit felis. Sed ac auctor tellus
@@ -200,38 +252,9 @@
               </li>
             </ul>
           </div>
-          <div class="section3__preview">
-            <div class="section3__video video">
-              <button class="video__btn">
-                <img src="img/sec3/material-symbols_play-circle-rounded.png" alt="">
-              </button>
-              <video
-                muted
-                loop
-                preload="metadata"
-                controls
-                poster="img/sec3/preview.png"
-              >
-                <source
-                  src="img/sec3/visma-video (video-converter.com).webm"
-                  type="video/webm"
-                />
-                <source
-                  src="img/sec3/visma-video (video-converter.com).mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <a href="" class="section3__servise servises__servise">
-              <div class="servises__title">
-                Запрос ставки и условий погрузочно-разгрузочных работ
-              </div>
-              <div class="servises__description">
-                Рассчитайте моментально стоимость полных <br />портовых услуг в
-                порту VISMA
-              </div>
-            </a>
-          </div>
+        </div>
+        <div class="section3__more">
+          <img src="img/sec3/icons8.png" alt="" />
         </div>
       </div>
     </section>
@@ -246,44 +269,55 @@
         </div>
         <div class="section4__news-container">
           <div class="section4__news news">
-            <img src="img/sec4/Rectangle 34.png" alt="" />
-            <div class="news__date">20/05/22</div>
-            <div class="news__title">Semper eu pulvinar eget integer</div>
-            <div class="news__subtitle">
-              Pretium duis phasellus netus ac. Nunc nibh nunc integer feugiat et
-              aliquam cras. Amet pharetra montes ipsum gravida tellus tellus.
+            <img src="img/sec4/1.jpg" alt="" />
+            <div class="news__container">
+              <div class="news__title">Semper eu pulvinar eget integer</div>
+              <div class="news__subtitle">
+                Pretium duis phasellus netus ac. Nunc nibh nunc integer feugiat
+                et aliquam cras. Amet pharetra montes ipsum gravida tellus
+                tellus.
+              </div>
+              <div class="news__date">20.05.22</div>
             </div>
           </div>
           <div class="section4__news news">
-            <img src="img/sec4/Rectangle 34-1.png" alt="" />
-            <div class="news__date">20/02/22</div>
-            <div class="news__title">
-              Vitae id nec nulla sit nunc cursus curabitur tempus vel enim.
-            </div>
-            <div class="news__subtitle">
-              Cras arcu ac commodo suspendisse commodo ipsum turpis dui. Quis
-              pharetra malesuada eget sit egestas et integer. Suspendisse a.
-            </div>
-          </div>
-          <div class="section4__news news">
-            <img src="img/sec4/Rectangle 34-2.png" alt="" />
-            <div class="news__date">30/12/21</div>
-            <div class="news__title">
-              Integer nisi sagittis in aliquet. Enim eget varius lacinia est a.
-            </div>
-            <div class="news__subtitle">
-              Lectus tempus felis pretium vitae. Tempor massa vestibulum
-              condimentum cursus diam quam. Mattis facilisi dignissim donec eget
-              vel.
+            <img src="img/sec4/2.jpg" alt="" />
+            <div class="news__container">
+              <div class="news__title">
+                Vitae id nec nulla sit nunc cursus curabitur tempus vel enim.
+              </div>
+              <div class="news__subtitle">
+                Cras arcu ac commodo suspendisse commodo ipsum turpis dui. Quis
+                pharetra malesuada eget sit egestas et integer. Suspendisse a.
+              </div>
+              <div class="news__date">20.02.22</div>
             </div>
           </div>
           <div class="section4__news news">
-            <img src="img/sec4/Rectangle 34-3.png" alt="" />
-            <div class="news__date">29/06/21</div>
-            <div class="news__title">Facilisis vitae proin quis</div>
-            <div class="news__subtitle">
-              Iaculis diam quam velit sit nunc turpis ultricies elementum. Vitae
-              lacinia tristique rutrum faucibus nulla quis ultricies. Risus.
+            <img src="img/sec4/3.jpg" alt="" />
+            <div class="news__container">
+              <div class="news__title">
+                Integer nisi sagittis in aliquet. Enim eget varius lacinia est
+                a.
+              </div>
+              <div class="news__subtitle">
+                Lectus tempus felis pretium vitae. Tempor massa vestibulum
+                condimentum cursus diam quam. Mattis facilisi dignissim donec
+                eget vel.
+              </div>
+              <div class="news__date">30.12.21</div>
+            </div>
+          </div>
+          <div class="section4__news news">
+            <img src="img/sec4/4.jpg" alt="" />
+            <div class="news__container">
+              <div class="news__title">Facilisis vitae proin quis</div>
+              <div class="news__subtitle">
+                Iaculis diam quam velit sit nunc turpis ultricies elementum.
+                Vitae lacinia tristique rutrum faucibus nulla quis ultricies.
+                Risus.
+              </div>
+              <div class="news__date">29.06.21</div>
             </div>
           </div>
         </div>
@@ -315,7 +349,10 @@
         <div class="footer__wrapper-bottom wrapper">
           <div class="footer__navs">
             <div class="footer__legal-nav nav">
-              <div class="nav__title">информация о юр. лице</div>
+              <div class="nav__title">
+                информация о юр. лице
+                <img src="/img/wooter/icons8.png" alt="" />
+              </div>
               <div class="nav__point">ОГРН 11111111111111111</div>
               <div class="nav__point">ИНН 2222222222222</div>
               <div class="nav__point">КПП 3333333333333</div>
@@ -323,13 +360,19 @@
               <div class="nav__point">ОКТМО 5555555555555</div>
             </div>
             <div class="footer__purchase-nav nav">
-              <div class="nav__title">Закупки</div>
+              <div class="nav__title">
+                Закупки
+                <img src="/img/wooter/icons8.png" alt="" />
+              </div>
               <a href="" class="nav__point">Нормативные документы</a>
               <a href="" class="nav__point">Закупки на VISMA Order</a>
               <a href="" class="nav__point">Закупки на VISMA Tender</a>
             </div>
             <div class="footer__shareholder-nav nav">
-              <div class="nav__title">акционерам</div>
+              <div class="nav__title">
+                акционерам
+                <img src="/img/wooter/icons8.png" alt="" />
+              </div>
               <a href="" class="nav__point">Устав VISMA</a>
               <a href="" class="nav__point">Свидетельства госрегистрации</a>
               <a href="" class="nav__point">Список аффилированных лиц</a>
@@ -337,7 +380,10 @@
               <a href="" class="nav__point">Отчеты</a>
             </div>
             <div class="footer__company-nav nav">
-              <div class="nav__title">о компании</div>
+              <div class="nav__title">
+                о компании
+                <img src="/img/wooter/icons8.png" alt="" />
+              </div>
               <a href="" class="nav__point">Порт сегодня </a>
               <a href="" class="nav__point">Характеристики порта</a>
               <a href="" class="nav__point">История</a>
