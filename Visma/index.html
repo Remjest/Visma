@@ -13,16 +13,27 @@
           <img src="img/header/Vector.svg" alt="" />
         </div>
         <nav class="header__nav">
-          <div class="header__point"><span>Навигация</span></div>
-          <div class="header__point header__point_active">
-            <a href="">О компании</a>
+          <div class="header__point">
+            <span>Навигация</span>
           </div>
-          <div class="header__point"><a href="">Новости</a></div>
-          <div class="header__point"><a href="">Услуги</a></div>
-          <div class="header__point"><a href="">Устав</a></div>
-          <div class="header__point"><a href="">Закупки</a></div>
-          <div class="header__point"><a href="">Партнеры</a></div>
-          <div class="header__point"><a href="">Контакты</a></div>
+          <div class="header__point header__point_active">
+            <a href="#main">Главная</a>
+          </div>
+          <div class="header__point">
+            <a href="#services">Услуги</a>
+          </div>
+          <div class="header__point">
+            <a href="#about">О компании</a>
+          </div>
+          <div class="header__point">
+            <a href="#news">Новости</a>
+          </div>
+          <div class="header__point">
+            <a href="#contacts">Контакты</a>
+          </div>
+          <div class="header__point">
+            <a href="#partners">Партнеры</a>
+          </div>
           <img src="/img/header/forward.png" alt="" />
         </nav>
         <div class="header_tools">
@@ -38,8 +49,9 @@
               />
             </div>
           </div>
-          <div class="header_lang">
-            <span>RU</span>
+          <div class="header__langs">
+            <div class="header__lang"><span>RU</span></div>
+            <div class="header__lang"><span>ENG</span></div>
             <img
               src="img/header/material-symbols_keyboard-arrow-down-rounded.svg"
               alt=""
@@ -48,7 +60,7 @@
         </div>
       </div>
     </header>
-    <section class="section section1">
+    <section class="section section1 scroller" id="main">
       <div class="wrapper section1__wrapper">
         <div class="section1__info">
           <h1 class="section1__big-title">Тавимский морской порт VISMA</h1>
@@ -86,7 +98,7 @@
         </div>
       </div>
     </section>
-    <section class="section section2">
+    <section class="section section2 scroller" id="services">
       <div class="section2__wrapper wrapper">
         <div class="section2__info">
           <h2 class="section2_title title">Услуги</h2>
@@ -154,7 +166,7 @@
         </div>
       </div>
     </section>
-    <section class="section section3">
+    <section class="section section3 scroller" id="about">
       <div class="section3__wrapper wrapper">
         <h2 class="section3__title title">О компании</h2>
         <div class="section3__content">
@@ -258,7 +270,7 @@
         </div>
       </div>
     </section>
-    <section class="section section4">
+    <section class="section section4 scroller" id="news">
       <div class="section4__wrapper wrapper">
         <div class="section4__news-top">
           <h2 class="section4__title title">Новости</h2>
@@ -324,7 +336,7 @@
       </div>
     </section>
     <footer class="section footer">
-      <div class="footer__footer-top">
+      <div class="footer__footer-top scroller" id="contacts">
         <div class="footer__wrapper-top wrapper">
           <div class="footer__adress">
             <img src="img/wooter/carbon_location-filled.svg" alt="" />
@@ -359,7 +371,7 @@
               <div class="nav__point">ОКПО 44444444444 ОКВЭД 52.24</div>
               <div class="nav__point">ОКТМО 5555555555555</div>
             </div>
-            <div class="footer__purchase-nav nav">
+            <div class="footer__purchase-nav nav" >
               <div class="nav__title">
                 Закупки
                 <img src="/img/wooter/icons8.png" alt="" />
@@ -368,7 +380,7 @@
               <a href="" class="nav__point">Закупки на VISMA Order</a>
               <a href="" class="nav__point">Закупки на VISMA Tender</a>
             </div>
-            <div class="footer__shareholder-nav nav">
+            <div class="footer__shareholder-nav nav scroller" id="partners">
               <div class="nav__title">
                 акционерам
                 <img src="/img/wooter/icons8.png" alt="" />
@@ -399,5 +411,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
