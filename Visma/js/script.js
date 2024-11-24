@@ -120,3 +120,26 @@ sectionWrapper3.addEventListener('click', (e) => {
         sectionWrapper3.classList.toggle('section3__wrapper_active');
     }
 });
+
+const videoWrapper = document.querySelector('.section3__video');
+const video = document.getElementById('video');
+const videoControl = document.querySelector('.video__btn');
+
+videoWrapper.addEventListener('click', () => togglePlayPause());
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === 32 || event.key === " ") {
+        event.preventDefault(); // Убираем прокручивание страницы
+        togglePlayPause();
+    }
+});
+
+function togglePlayPause() {
+    if (video.paused) {
+        videoControl.style.display = 'none';
+        video.play();
+    } else {
+        videoControl.style.display = '';
+        video.pause();
+    }
+}
