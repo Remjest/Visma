@@ -2,6 +2,8 @@ console.log("Delaem");
 
 let clientWidth = document.body.getBoundingClientRect().width;
 
+//-----------------------JS GENERAL-------------------------\\
+
 if (typeof window.ResizeObserver !== 'undefined') {
     const resizeObserver = new ResizeObserver(() => {
         const contentWidth = document.body.getBoundingClientRect().width;
@@ -99,3 +101,22 @@ if (typeof window.IntersectionObserver !== 'undefined') {
     });
 }
 
+//-----------------------JS MAIN-------------------------\\
+
+const sectionWrapper2 = document.querySelector('.section2__wrapper');
+
+sectionWrapper2.addEventListener('click', (e) => {
+    if (clientWidth > 1000) return;
+    if (e.target.closest('.section2__more img')) {
+        sectionWrapper2.classList.toggle('section2__wrapper_active');
+    }
+});
+
+const sectionWrapper3 = document.querySelector('.section3__wrapper');
+
+sectionWrapper3.addEventListener('click', (e) => {
+    if (clientWidth > 1000) return;
+    if (e.target.closest('.section3__more img')) {
+        sectionWrapper3.classList.toggle('section3__wrapper_active');
+    }
+});

@@ -223,10 +223,10 @@
     -webkit-transition: all ease-in-out 1.3s;
     transition: all ease-in-out 1.3s;
   }
-  .section2__wrapper:hover {
-    max-height: 5500px;
+  .section2__wrapper_active {
+    max-height: 1300px;
   }
-  .section2__wrapper:hover .section2__more img {
+  .section2__wrapper_active .section2__more img {
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
             transform: rotate(270deg);
@@ -402,10 +402,10 @@
     -webkit-transition: all ease-in-out 1.3s;
     transition: all ease-in-out 1.3s;
   }
-  .section3__wrapper:hover {
-    max-height: 5500px;
+  .section3__wrapper_active {
+    max-height: 2300px;
   }
-  .section3__wrapper:hover .section3__more img {
+  .section3__wrapper_active .section3__more img {
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
             transform: rotate(270deg);
